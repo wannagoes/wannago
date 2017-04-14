@@ -30,5 +30,8 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 }
 
 #myNavbar{
-  height: 40px;
+  padding-top: 8px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 20px;
 }
