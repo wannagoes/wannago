@@ -11,7 +11,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       min-height: 100%;
   }
   .w3-bar .w3-button {
-      padding: 15px;
+      padding-top: 8px;
+      padding-right: 15px;
+      padding-bottom: 15px;
+      padding-left: 20px;
   }
 
 /* Fotos del equipo */
@@ -30,8 +33,5 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 }
 
 #myNavbar{
-  padding-top: 8px;
-  padding-right: 15px;
-  padding-bottom: 15px;
-  padding-left: 20px;
+  height:40px;
 }
