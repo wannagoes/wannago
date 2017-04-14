@@ -14,8 +14,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
       padding: 8px;
   }
 
+/* Fotos del equipo */
 .equipo {
   width: 60%;
   display: block;
-  margin: 0 auto; 
+  margin: 0 auto;
+  box-shadow: 10px 10px 5px #323232;
 }
