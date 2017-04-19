@@ -11,7 +11,7 @@
  
 <body>
 
-  <!-- Navbar y logo NO RESPONSIVE de wannago -->
+  <!-- Navbar y logo de wannago -->
   <div class="w3-top">
     <div class="w3-bar w3-white w3-card-2" id="myNavbar">
       <a href="#home" class="w3-bar-item w3-button w3-wide" id="logo"><img src="img/LOGOb.png" style="height:40px"></a>
@@ -37,25 +37,20 @@
     <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">—</a>
    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">wanna<b>go</b></a>
     <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">Equipo</a>
-    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">WORK</a>
-    <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button">PRICING</a>
-    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT</a>
+    <a href="#work" onclick="w3_close()" class="w3-bar-item w3-button">Proyecto</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contacto</a>
   </nav>
 
   
-  <!-- Landing con la imagen.-->
-  <header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <!-- Landing con la imagen -->
+  <header class="bgimg-1 w3-display-container " id="home"
     <div class="w3-display-left w3-text-white" style="padding:48px">
       <span class="w3-jumbo w3-hide-small">Bienvenido a wanna<b>go</b></span><br>
       <span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br>
       <span class="w3-large">Descubre aquello que te va a encantar y aún no sabes que existe</span>
       <p><a href="#about" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Saber más</a></p>
     </div>
-
   </header>
-
-  
-  
   
   <!-- Conoce wannago -->
   <div class="w3-container" style="padding:128px 16px" id="about">
@@ -93,15 +88,16 @@
 
   
   <!-- Promo Section-->
-  <div class="w3-container w3-light-grey" style="padding:128px 16px">
-    <div class="w3-row-padding">
-      <div class="w3-col m6">
-        <h3>Descubrir está a un clic</h3>
-        <p>Usar wanna<b>go</b> para llegar a tus nuevas cosas favoritas es más fácil de lo que parece. Y trabajamos cada día para hacértelo extra-fácil.</p>
+  <div class="w3-container w3-light-grey" style="padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 16px; overflow: hidden">
+    <div class="w3-row-padding" id="bigdi">
+      <div class="w3-col m6" style="padding: 40px 10px;" id="marx">
+        <h1>Descubrir está a un clic</h1>
+        <p>Usar wanna<b>go</b> para llegar a tus nuevas cosas favoritas es más fácil de lo que parece. Y trabajamos cada día para hacértelo aún mejor. Series, juegos, espectáculos, películas, exposiciones, artistas, podcasts... todo a un clic de distancia.</p>
         <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> Mira cómo funciona</a></p>
       </div>
-      <div class="w3-col m6">
-        <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Foto 0" width="700" height="394">
+      
+      <div class="w3-col m6" id="col">
+        <img alt="Buildings" id="divalt">
       </div>
     </div>
   </div>
@@ -169,41 +165,27 @@
 
     <div class="w3-row-padding" style="margin-top:64px">
       <div class="w3-col l3 m6">
-        <img src="/w3images/Foto1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Foto 1">
+ 
+        <img src="img/recomienda.png" style="width:80%" onclick="onClick(this)" class="w3-hover-opacity inter" alt="wanna<b>go</b> hace toooodo el trabajo de buscar lo que te pueda gustar. Tú sólo tienes que decidir si te convence o no.">
       </div>
       <div class="w3-col l3 m6">
-        <img src="/w3images/tech_phone.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Foto 2">
+        <img src="img/gustos.png" style="width:80%" onclick="onClick(this)" class="w3-hover-opacity inter" alt="wanna<b>go</b> te permite llevar un seguimiento de tus gustos, y te mantiene al día de las últimas novedades, porque sabemos que no puedes estar en todo.">
       </div>
       <div class="w3-col l3 m6">
-        <img src="/pictures/wannago.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Foto 3">
+        <img src="img/calendar.png" style="width:80%" onclick="onClick(this)" class="w3-hover-opacity inter" alt="Un bonito calendario para poder organizar tu tiempo libre.">
       </div>
       <div class="w3-col l3 m6">
-        <img src="/w3images/tech_sound.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Foto 4">
-      </div>
-    </div>
-
-    <div class="w3-row-padding w3-section">
-      <div class="w3-col l3 m6">
-        <img src="/w3images/tech_tablet.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Foto 5">
-      </div>
-      <div class="w3-col l3 m6">
-        <img src="/w3images/tech_camera.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Foto 6">
-      </div>
-      <div class="w3-col l3 m6">
-        <img src="/w3images/tech_typewriter.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Foto 7">
-      </div>
-      <div class="w3-col l3 m6">
-        <img src="/w3images/tech_tableturner.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Foto 8">
+        <img src="img/contribuir.png" style="width:80%" onclick="onClick(this)" class="w3-hover-opacity inter" alt="¿Falta algún artista? ¿Algún evento? Sea lo que sea, ¡añádelo a la base de datos de wanna<b>go</b>!"
       </div>
     </div>
   </div>
 
   
-  <!-- Modal for full size images on click-->
+  <!-- Pantalla completa de las imágenes-->
   <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
-    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">Ã—</span>
-    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-      <img id="img01" class="w3-image">
+    <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">X</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64" style="height:100vh">
+      <img id="img01" class="w3-image" style="height:80%">
       <p id="caption" class="w3-opacity w3-large"></p>
     </div>
   </div>
@@ -218,7 +200,7 @@
       <div class="w3-half">
         
  
-        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: wannago@wannago.com</p>
+        <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: bienvenido@wannago.es</p>
         <br>
         <form action="/action_page.php" target="_blank">
           <p><input class="w3-input w3-border" type="text" placeholder="Nombre" required name="Nombre"></p>
