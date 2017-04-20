@@ -3,7 +3,7 @@ function onClick(element) {
   document.getElementById("img01").src = element.src;
   document.getElementById("modal01").style.display = "block";
   var captionText = document.getElementById("caption");
-  captionText.innerHTML = element.alt;
+  captionText.innerHTML = element.alt; 
 }
 
 // Cambiar entre enseñar y esconder la sidebar al hacer click en el icono de menú
