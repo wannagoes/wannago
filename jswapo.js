@@ -23,6 +23,19 @@ function w3_close() {
 }
 
 function cambio(){
+    //Para las cards de equipos
+    var equi = document.getElementById('team').getElementsByClassName('w3-container');
+    var i,max=0;
+    
+    for(i=0; i<equi.length; i++){
+        equi[i].style.height="initial";
+        if(equi[i].clientHeight > max)
+            max = equi[i].clientHeight;
+    }
+    for(i=0; i<equi.length; i++){
+        equi[i].style.height = max+'px';
+    }
+    
     //Cosillas responsive
     var delta;
     var altura = document.getElementById('marx').offsetHeight;
@@ -37,18 +50,33 @@ function cambio(){
     
     //Comprobamos si la columna es más ancha que la imagen o al revés.
     var wid = document.documentElement.clientWidth;
-    if(theImg.width > 0.5*wid){
-        theCol.maxWidth=0.5*wid;
-        delta = theImg.width - 0.5*wid;
-        theImg.style.left = -delta/2+"px";
+    console.log(wid);
+    if(wid <= 600){
+        theImg.style.width=wid;
+        theImg.style.height="initial";
+        theCol.style.maxWidth="100vw";
+        theCol.style.width="100vw";
+        theCol.style.height="initial";
         theImg.src="img/splash-short.png";
+        delta = theImg.width - wid;
+        theImg.style.left = -delta/2+"px";
+        theImg.style.top = "0px";
     } else {
-        theImg.width = 0.5*wid;
-        theImg.height = 9*theImg.width/16;
-        delta = theImg.height - altura;
-        theImg.style.top = -delta/2+"px";
-        theImg.src="img/splash-long.png";
+        theCol.style.maxWidth="50vw";
+        if(theImg.width > 0.5*wid){
+            theCol.maxWidth=0.5*wid;
+            delta = theImg.width - 0.5*wid;
+            theImg.style.left = -delta/2+"px";
+            theImg.src="img/splash-short.png";
+        } else {
+            theImg.width = 0.5*wid;
+            theImg.height = 9*theImg.width/16;
+            delta = theImg.height - altura;
+            theImg.style.top = -delta/2+"px";
+            theImg.src="img/splash-long.png";
+        }
     }
+    
 }
 
 //Cosas a ejecutar cuando se cargue la página.
