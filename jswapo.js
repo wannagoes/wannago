@@ -26,6 +26,7 @@ function cambio(){
     //Para las cards de equipos
     var equi = document.getElementById('team').getElementsByClassName('w3-container');
     var i,max=0;
+    var wid = document.documentElement.clientWidth;
     
     for(i=0; i<equi.length; i++){
         equi[i].style.height="initial";
@@ -35,6 +36,12 @@ function cambio(){
     for(i=0; i<equi.length; i++){
         equi[i].style.height = max+'px';
     }
+    
+    //Para el vídeo de vimeo.
+    var vid = document.getElementById('videovim');
+    vid.style.width = "60%";
+    console.log(vid.clientWidth);
+    vid.style.height = vid.clientWidth * (0.5625+0.02) + "px";
     
     //Cosillas responsive
     var delta;
@@ -49,8 +56,6 @@ function cambio(){
     theImg.width = 16*theImg.height/9;
     
     //Comprobamos si la columna es más ancha que la imagen o al revés.
-    var wid = document.documentElement.clientWidth;
-    console.log(wid);
     if(wid <= 600){
         theImg.style.width=wid;
         theImg.style.height="initial";

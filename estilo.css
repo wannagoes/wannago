@@ -21,6 +21,12 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
   padding-top: 5px;
 }
 
+.conoce{
+    margin: 0 auto;
+    padding: 15px;
+    width: 30%;
+    display: block;
+}
 
 #myNavbar{
   height:50px;
@@ -64,4 +70,15 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
 
 #col{
     overflow: hidden;
+}
+
+#vimeo{
+    padding-top: 64px;
+}
+
+#videovim{
+    display: block;
+    margin: auto;
+    width = 100%;
+    padding-top: 16px;
 }
