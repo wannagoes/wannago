@@ -39,10 +39,16 @@ function cambio(){
     
     //Para el vídeo de vimeo.
     var vid = document.getElementById('videovim');
-    vid.style.width = "60%";
-    console.log(vid.clientWidth);
-    vid.style.height = vid.clientWidth * (0.5625+0.02) + "px";
     
+    
+    if(wid<=950){
+        vid.style.width = "100%";
+    } else {
+        vid.style.width = "60%";
+    }
+    console.log(vid.clientWidth);
+    
+    vid.style.height = vid.clientWidth * (0.5625+0.02) + "px";
     //Cosillas responsive
     var delta;
     var altura = document.getElementById('marx').offsetHeight;
@@ -57,6 +63,7 @@ function cambio(){
     
     //Comprobamos si la columna es más ancha que la imagen o al revés.
     if(wid <= 600){
+        
         theImg.style.width=wid;
         theImg.style.height="initial";
         theCol.style.maxWidth="100vw";
@@ -81,6 +88,7 @@ function cambio(){
             theImg.src="img/splash-long.png";
         }
     }
+    
     
 }
 
