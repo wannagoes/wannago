@@ -36,19 +36,7 @@ function cambio(){
     for(i=0; i<equi.length; i++){
         equi[i].style.height = max+'px';
     }
-    
-    //Para el vídeo de vimeo.
-    var vid = document.getElementById('videovim');
-    
-    
-    if(wid<=950){
-        vid.style.width = "100%";
-    } else {
-        vid.style.width = "60%";
-    }
-    console.log(vid.clientWidth);
-    
-    vid.style.height = vid.clientWidth * (0.5625+0.02) + "px";
+        
     //Cosillas responsive
     var delta;
     var altura = document.getElementById('marx').offsetHeight;
@@ -63,13 +51,12 @@ function cambio(){
     
     //Comprobamos si la columna es más ancha que la imagen o al revés.
     if(wid <= 600){
-        
         theImg.style.width=wid;
         theImg.style.height="initial";
         theCol.style.maxWidth="100vw";
         theCol.style.width="100vw";
         theCol.style.height="initial";
-        theImg.src="img/splash-short.png";
+        theImg.src="img/grshort.png";
         delta = theImg.width - wid;
         theImg.style.left = -delta/2+"px";
         theImg.style.top = "0px";
@@ -79,13 +66,13 @@ function cambio(){
             theCol.maxWidth=0.5*wid;
             delta = theImg.width - 0.5*wid;
             theImg.style.left = -delta/2+"px";
-            theImg.src="img/splash-short.png";
+            theImg.src="img/grshort.png";
         } else {
             theImg.width = 0.5*wid;
             theImg.height = 9*theImg.width/16;
             delta = theImg.height - altura;
             theImg.style.top = -delta/2+"px";
-            theImg.src="img/splash-long.png";
+            theImg.src="img/grlong.png";
         }
     }
     
